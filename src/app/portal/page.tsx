@@ -94,7 +94,7 @@ export default function PortalDashboard() {
         >
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center">
-              {(member.freezeStatus === 'frozen' || member.freezeStatus === 'active') && <Snowflake className="w-6 h-6 text-purple-500" />}
+              {member.freezeStatus === 'frozen'}
             </div>
           </div>
           <div className="text-lg font-semibold capitalize">{member.freezeStatus === 'none' ? 'Active' : member.freezeStatus}</div>
