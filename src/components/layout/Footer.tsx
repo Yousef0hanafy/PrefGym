@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Instagram, Dumbbell, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Globe, Dumbbell, MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -33,7 +33,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-red-500 transition-colors"
               >
-                <Instagram className="w-5 h-5" />
+                <Globe className="w-5 h-5" />
               </a>
             </div>
           </div>
