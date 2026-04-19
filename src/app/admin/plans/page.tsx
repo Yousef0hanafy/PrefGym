@@ -25,7 +25,7 @@ export default function PlansPage() {
         price: plan.price.toString(),
         duration: plan.duration,
         features: plan.features.join('\n'),
-        isFeatured: plan.isFeatured,
+        isFeatured: !!plan.isFeatured,
       });
     } else {
       setEditingPlan(null);
