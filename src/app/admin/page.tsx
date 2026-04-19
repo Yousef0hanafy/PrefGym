@@ -32,8 +32,7 @@ function AnimatedCounter({ value }: { value: number }) {
 import { useEffect, useState } from 'react';
 
 export default function AdminDashboard() {
-  const { totalMembers, totalTrainers, premiumSpace, expiringSoon, revenue, members, bookings } = useGymStore();
-
+const { totalMembers, totalTrainers, premiumSpace, expiringSoon, revenue, members, bookingRequests: bookings } = useGymStore();
   const stats = [
     {
       title: 'Total Active Members',
