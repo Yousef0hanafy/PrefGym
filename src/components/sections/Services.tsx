@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Dumbbell, Gloves, Spa, UserCheck, Stethoscope, Activity } from 'lucide-react';
+import { Dumbbell, Box, Sparkles, UserCheck, Stethoscope, Activity } from 'lucide-react';
 
 const services = [
   {
@@ -10,12 +10,12 @@ const services = [
     description: 'State-of-the-art machines and free weights for all your training needs.',
   },
   {
-    icon: Gloves,
+    icon: Box,
     title: 'Kickboxing',
     description: 'Professional kickboxing training with expert coaches.',
   },
   {
-    icon: Spa,
+    icon: Sparkles,
     title: 'Spa Access',
     description: 'Relax and recover with our premium spa facilities.',
   },
