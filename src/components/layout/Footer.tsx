@@ -25,7 +25,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-red-500 transition-colors"
               >
-                <Facebook className="w-5 h-5" />
+                <Globe className="w-5 h-5" />
               </a>
               <a
                 href="https://www.instagram.com/performance_gym__"
