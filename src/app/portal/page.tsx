@@ -92,11 +92,16 @@ export default function PortalDashboard() {
           transition={{ delay: 0.3 }}
           className="p-6 rounded-2xl bg-gray-900 border border-gray-800"
         >
-          <div className="flex items-center space-x-3 mb-4">
-            <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center">
-              {member.freezeStatus === 'frozen'}
-            </div>
+        <div className="flex items-center space-x-3 mb-4">
+          <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center">
+            {/* نستخدم (member.freezeStatus as string) لتجاوز خطأ TypeScript */}
+            {(member.freezeStatus as string) === 'frozen' ? (
+              <span className="text-xl">❄️</span>
+            ) : (
+              <span className="text-xl">🔥</span>
+            )}
           </div>
+        </div>
           <div className="text-lg font-semibold capitalize">{member.freezeStatus === 'none' ? 'Active' : member.freezeStatus}</div>
           <div className="text-sm text-gray-400">{member.freezesLeft} Freezes Left</div>
         </motion.div>
